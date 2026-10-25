@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MQG | Requisição de Serviço</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="Assets/Css/formulario.css" />
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo"><img src="Assets/Imagens/esse.png" alt="Logo MQG"></a>
+  <a href="index.html" class="nav-back">Voltar ao portfólio</a>
+</nav>
+
+<main>
+  <div class="page-label">// Requisição de Serviço</div>
+  <h1>Solicite um <span>projeto</span></h1>
+  <p class="page-desc">
+    Preencha o formulário abaixo com as informações do seu projeto.
+    Responderei em até 48h com uma proposta personalizada.
+  </p>
+
+  <form id="serviceForm" novalidate>
+
+    <div class="form-section">
+      <div class="form-section-header">
+        <span class="form-section-num">01</span>
+        <span class="form-section-title">Identificação</span>
+      </div>
+      <div class="form-section-body">
+        <div class="form-row">
+          <div class="field">
+            <label for="nome">Nome completo <span class="required">*</span></label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+          </div>
+          <div class="field">
+            <label for="empresa">Empresa / Projeto</label>
+            <input type="text" id="empresa" name="empresa" placeholder="Nome da empresa (opcional)" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="email">E-mail <span class="required">*</span></label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+          </div>
+          <div class="field">
+            <label for="telefone">WhatsApp / Telefone</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <div class="form-section-header">
+        <span class="form-section-num">02</span>
+        <span class="form-section-title">Tipo de Serviço <span style="color:var(--cyan)">*</span></span>
+      </div>
+      <div class="form-section-body">
+        <div class="service-grid">
+          <label class="service-item">
+            <input type="checkbox" name="servico" value="landing-page" />
+            <span class="service-label">Landing Page</span>
+          </label>
+          <label class="service-item">
+            <input type="checkbox" name="servico" value="portfolio" />
+            <span class="service-label">Site Portfólio</span>
+          </label>
+          <label class="service-item">
+            <input type="checkbox" name="servico" value="responsivo" />
+            <span class="service-label">Layout Responsivo</span>
+          </label>
+          <label class="service-item">
+            <input type="checkbox" name="servico" value="dashboard" />
+            <span class="service-label">Dashboard / UI</span>
+          </label>
+          <label class="service-item">
+            <input type="checkbox" name="servico" value="design-grafico" />
+            <span class="service-label">Design Gráfico</span>
+          </label>
+          <label class="service-item">
+            <input type="checkbox" name="servico" value="logotipo" />
+            <span class="service-label">Logotipo</span>
+          </label>
+          <label class="service-item">
+            <input type="checkbox" name="servico" value="cartao-visita" />
+            <span class="service-label">Cartão de Visita</span>
+          </label>
+          <label class="service-item">
+            <input type="checkbox" name="servico" value="conteudo-web" />
+            <span class="service-label">Conteúdo Web</span>
+          </label>
+          <label class="service-item">
+            <input type="checkbox" name="servico" value="python" />
+            <span class="service-label">Script Python</span>
+          </label>
+          <label class="service-item">
+            <input type="checkbox" name="servico" value="outro" />
+            <span class="service-label">Outro</span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <div class="form-section-header">
+        <span class="form-section-num">03</span>
+        <span class="form-section-title">Detalhes do Projeto</span>
+      </div>
+      <div class="form-section-body">
+        <div class="field">
+          <label for="descricao">Descreva seu projeto <span class="required">*</span></label>
+          <textarea id="descricao" name="descricao" placeholder="O que você precisa? Qual é o objetivo do projeto? Quanto mais detalhes, melhor." required></textarea>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="referencia">Referências visuais / links</label>
+            <input type="text" id="referencia" name="referencia" placeholder="Sites, behance, dribbble, etc." />
+          </div>
+          <div class="field">
+            <label for="plataforma">Plataforma / Uso</label>
+            <div class="select-wrap">
+              <select id="plataforma" name="plataforma">
+                <option value="">Selecione...</option>
+                <option value="web-desktop">............</option>
+                <option value="web-mobile">..........</option>
+                <option value="web-ambos">............</option>
+                <option value="impresso">.............</option>
+                <option value="digital-grafico">..............</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <div class="form-section-header">
+        <span class="form-section-num">04</span>
+        <span class="form-section-title">Prazo e Orçamento</span>
+      </div>
+      <div class="form-section-body">
+        <div class="form-row">
+          <div class="field">
+            <label for="prazo">Prazo estimado</label>
+            <div class="select-wrap">
+              <select id="prazo" name="prazo">
+                <option value="">Selecione...</option>
+                <option value="urgente">............</option>
+                <option value="2-semanas">.............</option>
+                <option value="1-mes">................</option>
+                <option value="flexivel">............</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="orcamento">Faixa de investimento</label>
+            <div class="select-wrap">
+              <select id="orcamento" name="orcamento">
+                <option value="">Selecione...</option>
+                <option value="ate-500">............</option>
+                <option value="500-1500">............</option>
+                <option value="1500-3000">................</option>
+                <option value="acima-3000">.........</option>
+                <option value="a-negociar">...............</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <label for="observacoes">Observações adicionais</label>
+          <textarea id="observacoes" name="observacoes" style="min-height:80px" placeholder="Algo mais que eu deva saber? Restrições, preferências, etc."></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-footer">
+      <span class="form-note">* campos obrigatórios — responderei em até 48h</span>
+      <button type="submit">Enviar Requisição →</button>
+    </div>
+
+  </form>
+</main>
+
+<div class="success-overlay" id="successOverlay">
+  <div class="success-icon">✓</div>
+  <h2 class="success-title">Requisição <span>enviada!</span></h2>
+  <p class="success-msg">
+    Obrigado pelo contato. Analisarei seu projeto e retornarei com uma proposta personalizada em até 48 horas.
+  </p>
+  <a href="index.html" class="success-back">← Voltar ao portfólio</a>
+</div>
+
+
+</body>
+</html>
